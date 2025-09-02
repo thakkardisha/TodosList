@@ -39,7 +39,6 @@ body {
     outline: none;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    width: 100%;
     transition: background-color 200ms ease-in-out;
 }
 
