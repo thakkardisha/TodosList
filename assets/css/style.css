@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #575656, #062e3f);
+    background: linear-gradient(135deg, #825a7c, #3f061b);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ body {
 }
 
 .todo-btn {
-    background: #007bff;
+    background: #bf6cb2;
     color: #fff;
     padding: 12px 20px;
     font-size: 18px;
@@ -59,7 +59,7 @@ body {
 }
 
 .todo-btn:hover {
-    background: #0056b3;
+    background: #3f061b;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -88,4 +88,43 @@ body {
 .done {
     text-decoration: line-through;
     opacity: 0.6;
+}
+
+/* Glassmorphic TaskCard Buttons */
+.btn-done,
+.btn-edit, 
+.btn-delete {
+  background: rgba(255, 255, 255, 0.15); /* Transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px); /* Glass blur */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-done:hover,
+.btn-edit:hover, 
+.btn-delete:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Active/pressed effect */
+.btn-done:active,
+.btn-edit:active,
+.btn-delete:active {
+  transform: scale(0.95);
+}
+
+
+#task-stats{
+    color:white;
+    margin-top:20px; 
+    font-family: Gadugi;
+    margin-bottom: 30px;
 }
